@@ -10,14 +10,15 @@ class Asiento:
             self.color = color
         
 class Auto:
-    def __init__(self):
-        self.modelo= ""
-        self.precio = 0
-        self.asientos = []
-        self.marca = ""
-        self.motor= Motor()
-        self.registro=0
-        self.cantidadCreados=0
+    cantidadCreados=0
+    def __init__(self,modelo,precio,asientos,marca,motor,registro):
+        self.modelo= modelo
+        self.precio = precio
+        self.asientos = asientos
+        self.marca = marca
+        self.motor= motor
+        self.registro=registro
+        self.cantidadCreados += 1
         
     def cantidadAsientos(self,):
         return len(self.asientos)

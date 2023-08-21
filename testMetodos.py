@@ -36,6 +36,7 @@ def testMetodoAsignarTipo():
     
     if(m1.tipo == "normal" and m2.tipo == "electrico"):
         ok = True
+    
     assert(ok)
 	
 def testMetodoCantidadAsientos():
